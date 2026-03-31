@@ -1,0 +1,74 @@
+/**********************
+    UNIVERSAL
+**********************/
+body {
+    margin: 0;
+    padding: 0;
+}
+.new-rocker-regular {
+  font-family: "New Rocker", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+h1 {
+    font-family: "New Rocker";
+    margin: 0;
+    padding: 30px;
+    font-size: 60px;
+    text-align: center;
+    color: rgb(27, 66, 54);
+}
+h4 {
+    font-family: "New Rocker";
+    margin: 0;
+    padding: 5px 0px;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: #e8c8c8;
+    background-color: rgba(6, 52, 63, 0.8);
+    padding: 10px;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+/**********************
+    SPECIFIC
+**********************/
+
+/*------ HEADER ------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    height: 8vh;
+    background: #e8c8c8;
+    background: linear-gradient(135deg, rgba(232, 200, 200, 1) 0%, rgba(167, 201, 214, 1) 50%, rgba(125, 186, 144, 1) 100%);
+}
+.nav-buttons {
+    display: flex;
+    justify-content: space-around;
+}
+/*------ HERO ------*/
+.hero {
+    margin: 10vh;
+    height: 90vh;
+    background-image: url(img/outside.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+}
+
+/*------ SPECIAL ------*/
+
+
+/*------ ABOUT ------*/
+
+
+/*------ CONTACT ------*/
+
+
+/*------ FOOTER ------*/
