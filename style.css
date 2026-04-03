@@ -1,12 +1,15 @@
 /**********************
     UNIVERSAL
 **********************/
+html {
+    scroll-behavior: smooth;
+}
 body {
     margin: 0;
     padding: 0;
     /*background-color: #231d1e;*/
     background: #E3B3C1;
-    background: linear-gradient(0deg, rgba(35, 29, 30, 1) 0%, rgba(231, 248, 245, 1) 100%);
+    background: linear-gradient(0deg, rgba(35, 29, 30, 1) 70%, #e7f8f5 100%);
 }
 .new-rocker-regular {
   font-family: "New Rocker", system-ui;
@@ -18,13 +21,24 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+.noto-sans-shavian-regular {
+  font-family: "Noto Sans Shavian", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jim-nightshade-regular {
+  font-family: "Jim Nightshade", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
 h1 {
     font-family: "New Rocker";
-    margin: 0;
+    margin: -20px;
     padding: 20px 0 0 0;
     font-size: 70px;
     text-align: center;
     color: rgb(27, 66, 54);
+    text-shadow: 2px 2px 3px #fff, -2px -2px 3px #fff;
 }
 h2 {
     font-family: "New Rocker";
@@ -46,7 +60,7 @@ h4 {
     padding: 0px 0px;
     font-size: 32px;
 }
-p {
+h5 {
     font-family: "Jacquard 24";
     margin: -10px;
     padding: 0;
@@ -54,6 +68,16 @@ p {
     text-align: center;
     text-shadow: 2px 2px 3px #fff, -2px -2px 3px #fff;
     color: rgb(27, 66, 54);
+}
+p {
+    font-family: "Noto Sans Shavian";
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+}
+p.latinP {
+    font-family: "Jim Nightshade";
+    font-size: 30px;
 }
 a {
     font-family: "New Rocker";
@@ -63,6 +87,19 @@ a {
     padding: 8px 20px;
     border-radius: 25px;
     font-size: 20px;
+}
+.upButton {
+    position: fixed;
+    bottom: 3vw;
+    right: 4vw;
+    background-color: rgba(6, 52, 63, 0.6);
+    color: #E3B3C1;
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-size: 28px;
+    z-index: 100;
+    transform: rotate(-90deg);
+    line-height: 1;
 }
 
 /**********************
@@ -82,32 +119,77 @@ header {
 .nav-buttons {
     display: flex;
     justify-content: space-around;
+    gap: 1vw;
 }
+
 /*------ HERO ------*/
 .hero {
-    margin: 5vh;
+    margin: 6vh;
     height: 85vh;
     background-image: url(img/outside.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 10px;
-    border: solid 2px #ebebeb;
+    border: solid 3px rgba(167, 201, 214, 1);
 }
 
 /*------ SPECIAL ------*/
 .special {
-    height: 40vw;
-    border: solid 1px aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    background: url(img/swirl.png);
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: rgba(35, 29, 30, 1);
+    background-blend-mode: color;
+    margin-top: 5vw 0;
+    padding: 3vw;
+    border-bottom: solid 2px rgba(167, 201, 214, 1);
 }
 .specialContainer {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 2vw;
+}
+.specialContainer img {
+    max-width: 40vw;
+    border-radius: 100px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+.specialContainer p {
+    max-width: 25vw;
+    color: #fff;
+}
+.special h2 {
+    color: #fff;
+}
+.special h3 {
+    color: #fff;
 }
 
 /*------ ABOUT ------*/
 article {
-    height: 40vw;
-    border: solid blue 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    height: 95vh;
+}
+article img {
+    max-width: 40vw;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
+}
+article p {
+    max-width: 20vw;
+    color: #a6d8cf;
+    font-size: 25px;
+    text-align: center;
 }
 
 /*------ CONTACT ------*/
