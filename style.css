@@ -1,15 +1,29 @@
 /**********************
     UNIVERSAL
 **********************/
+
+/*------ GENERAL ------*/
 html {
     scroll-behavior: smooth;
 }
 body {
     margin: 0;
     padding: 0;
-    /*background-color: #231d1e;*/
     background: #E3B3C1;
     background: linear-gradient(0deg, rgba(35, 29, 30, 1) 70%, #e7f8f5 100%);
+}
+.upButton {
+    position: fixed;
+    bottom: 3vw;
+    right: 4vw;
+    background-color: rgba(6, 52, 63, 0.6);
+    color: #E3B3C1;
+    padding: 10px 10px;
+    border-radius: 50%;
+    font-size: 28px;
+    z-index: 100;
+    transform: rotate(-90deg);
+    line-height: 1;
 }
 .new-rocker-regular {
   font-family: "New Rocker", system-ui;
@@ -31,11 +45,13 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/*------ TEXT ------*/
 h1 {
     font-family: "New Rocker";
     margin: -20px;
     padding: 20px 0 0 0;
-    font-size: 70px;
+    font-size: 4.5vw;
     text-align: center;
     color: rgb(27, 66, 54);
     text-shadow: 2px 2px 3px #fff, -2px -2px 3px #fff;
@@ -88,18 +104,9 @@ a {
     border-radius: 25px;
     font-size: 20px;
 }
-.upButton {
-    position: fixed;
-    bottom: 3vw;
-    right: 4vw;
-    background-color: rgba(6, 52, 63, 0.6);
-    color: #E3B3C1;
-    padding: 10px 10px;
-    border-radius: 50%;
-    font-size: 28px;
-    z-index: 100;
-    transform: rotate(-90deg);
-    line-height: 1;
+label {
+    font-family: "New Rocker";
+    color: #e7f8f5;
 }
 
 /**********************
@@ -140,14 +147,13 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    background: url(img/swirl.png);
+    background: url(img/swirlFadeVertical.png);
     background-size: cover;
     background-attachment: fixed;
     background-color: rgba(35, 29, 30, 1);
     background-blend-mode: color;
     margin-top: 5vw 0;
     padding: 3vw;
-    border-bottom: solid 2px rgba(167, 201, 214, 1);
 }
 .specialContainer {
     display: flex;
@@ -182,6 +188,7 @@ article {
 }
 article img {
     max-width: 40vw;
+    border: solid 2px rgba(167, 201, 214, 1);
     border-radius: 10px;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
 }
@@ -194,8 +201,10 @@ article p {
 
 /*------ CONTACT ------*/
 #contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40vw;
-    border: solid red 1px;
 }
 
 /*------ FOOTER ------*/
